@@ -92,7 +92,6 @@ In this project, the L293D is connected to the Arduino Uno and DC motors. The Ar
 | 🔋 **9V Battery** | Power supply |
 | 🔋 **Powerbank** | Power supply for the system |
 
----
 
 ### Software & Libraries
 
@@ -104,3 +103,5 @@ In this project, the L293D is connected to the Arduino Uno and DC motors. The Ar
 | 🔥 **PyTorch** | Deep learning framework |
 | 🖐️ **CVZone** | Computer vision utilities |
 | ⚡ **Arduino IDE** | Arduino programming and development |
+
+

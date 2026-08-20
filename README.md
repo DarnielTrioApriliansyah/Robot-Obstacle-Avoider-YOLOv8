@@ -35,7 +35,7 @@ objects in real time and respond by changing its movement.
 
 ### YOLOv8
 
-<p align="center"> <img src="images/yolov8.png" width="700"> </p>
+<p align="center"> <img src="images/yolov8.png" width="400"> </p>
 
 YOLOv8 (You Only Look Once version 8) is a real-time object detection model developed by Ultralytics. It is designed to detect and locate objects in images or video by predicting their class, bounding box, and confidence score in a single inference process.
 
@@ -43,7 +43,7 @@ YOLOv8 is widely used in computer vision applications because of its balance bet
 
 ### Computer Vision
 
-<p align="center"> <img src="images/1692718494623.png" width="700"> </p>
+<p align="center"> <img src="images/1692718494623.png" width="400"> </p>
 
 OpenCV (Open Source Computer Vision Library) is an open-source library used for image and video processing and computer vision applications. It provides various functions for capturing, processing, and analyzing visual data in real time.
 
@@ -57,7 +57,7 @@ In this project, obstacle detection is performed using a webcam and YOLOv8 rathe
 
 ### Arduino UNO
 
-<p align="center"> <img src="images/arduino uno.jpg" width="700"> </p>
+<p align="center"> <img src="images/arduino uno.jpg" width="400"> </p>
 
 Arduino Uno is a microcontroller board based on the ATmega328P microcontroller. It is commonly used in embedded systems and robotics because it can receive input signals, process commands, and control electronic components.
 
@@ -65,7 +65,7 @@ In this project, Arduino Uno acts as the motor control unit. It receives movemen
 
 ### IC L293D
 
-<p align="center"> <img src="images/l293d.png" width="700"> </p>
+<p align="center"> <img src="images/l293d.png" width="400"> </p>
 
 L293D is a dual H-bridge motor driver IC designed to control the direction and movement of DC motors. It acts as an interface between a microcontroller and motors, allowing the motors to be controlled using logic signals from the microcontroller.
 

@@ -5,15 +5,14 @@ A small autonomous robot using YOLOv8, OpenCV, and Arduino for real-time object 
 
 ## 📑 List of Contents
 
-- [Introduction](#-introduction)
-- [Background & Key Concepts](#-background--key-concepts)
-- [Design](##design)
-- [Program](#program)
-- [Results](#results)
+- [Introduction](#Introduction)
+- [Background & Key Concepts](#Literature)
+- [Design](##Design)
+- [Program](#Programs)
 
 ---
 
-## 📌 Introduction
+## Introduction
 
 Obstacle avoidance is one of the fundamental problems in mobile robotics.
 A robot needs to be able to detect objects in its environment and determine
@@ -31,7 +30,7 @@ objects in real time and respond by changing its movement.
 
 ---
 
-## 🧠 Background & Key Concepts
+## Literature
 
 ### YOLOv8
 

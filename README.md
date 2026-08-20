@@ -7,7 +7,7 @@ A small autonomous robot using YOLOv8, OpenCV, and Arduino for real-time object 
 
 - [Introduction](#-introduction)
 - [Background & Key Concepts](#-background--key-concepts)
-- [Design](#-design)
+- [Design](##-design)
 - [Program](#-program)
 - [Results](#-results)
 

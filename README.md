@@ -65,8 +65,12 @@ In this project, Arduino Uno acts as the motor control unit. It receives movemen
 
 ### IC L293D
 
-<p align="center"> <img src="images/l293d.png" width="200"> </p>
+<p align="center"> <img src="images/l293d.png" width="300"> </p>
 
 L293D is a dual H-bridge motor driver IC designed to control the direction and movement of DC motors. It acts as an interface between a microcontroller and motors, allowing the motors to be controlled using logic signals from the microcontroller.
 
 In this project, the L293D is connected to the Arduino Uno and DC motors. The Arduino sends control signals to the L293D, which then controls the direction of motor rotation, allowing the robot to move forward, backward, turn left, turn right, or stop.
+
+---
+
+### Design

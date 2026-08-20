@@ -40,14 +40,11 @@ objects in real time and respond by changing its movement.
 
 ### YOLOv8
 
-**YOLO (You Only Look Once)** is an object detection approach that can
-detect and locate multiple objects in an image in real time.
+<p align="center"> <img src="images/yolov8.png" width="700"> </p>
 
-In this project, **YOLOv8** is used to detect objects captured by the
-webcam.
+YOLOv8 (You Only Look Once version 8) is a real-time object detection model developed by Ultralytics. It is designed to detect and locate objects in images or video by predicting their class, bounding box, and confidence score in a single inference process.
 
-The detected objects are represented by bounding boxes and their
-corresponding class labels and confidence values.
+YOLOv8 is widely used in computer vision applications because of its balance between detection accuracy and computational efficiency. In this project, YOLOv8 is used to detect obstacles captured by a webcam, with the detection results serving as an input for the robot's obstacle avoidance system.
 
 ### Computer Vision
 

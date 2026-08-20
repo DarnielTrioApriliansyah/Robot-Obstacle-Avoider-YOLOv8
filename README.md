@@ -76,3 +76,31 @@ In this project, the L293D is connected to the Arduino Uno and DC motors. The Ar
 ## Design
 
 <p align="center"> <img src="images/skematik.png" width="1000"> </p>
+
+### Hardware
+
+| Component | Function |
+|:---|:---|
+| 🔵 **Arduino Uno R3** | Main microcontroller for robot control |
+| ⚙️ **L293D Motor Driver** | Controls the DC motors |
+| 📷 **Webcam** | Captures the environment for object detection |
+| 🔄 **DC Gear Motors** | Drives the robot |
+| 🛞 **Wheels** | Provides robot movement |
+| ⚪ **Caster Wheel** | Supports robot balance and movement |
+| 🔌 **Breadboard** | Prototyping and circuit connections |
+| 🔗 **Jumper Wires** | Electrical connections |
+| 🔋 **9V Battery** | Power supply |
+| 🔋 **Powerbank** | Power supply for the system |
+
+---
+
+### Software & Libraries
+
+| Software / Library | Purpose |
+|:---|:---|
+| 🐍 **Python** | Main programming language |
+| 👁️ **OpenCV** | Image and video processing |
+| 🎯 **YOLOv8** | Real-time object detection |
+| 🔥 **PyTorch** | Deep learning framework |
+| 🖐️ **CVZone** | Computer vision utilities |
+| ⚡ **Arduino IDE** | Arduino programming and development |

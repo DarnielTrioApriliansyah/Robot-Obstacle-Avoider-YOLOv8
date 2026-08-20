@@ -74,3 +74,5 @@ In this project, the L293D is connected to the Arduino Uno and DC motors. The Ar
 ---
 
 ## Design
+
+<p align="center"> <img src="images/skematik.png" width="1000"> </p>

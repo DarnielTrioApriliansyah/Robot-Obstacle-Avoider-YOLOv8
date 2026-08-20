@@ -3,129 +3,80 @@ A small autonomous robot using YOLOv8, OpenCV, and Arduino for real-time object 
 
 # 🤖 YOLO Obstacle Avoider
 
-> A small robot that uses **YOLOv8 + OpenCV + Arduino** to detect objects and avoid obstacles in real time.
+A small autonomous robot that combines **YOLOv8, OpenCV, and Arduino**
+for real-time object detection and obstacle avoidance.
 
-<p align="center">
-  <img src="images/robot.jpg" width="500">
-</p>
+---
 
-## ⚡ About
+## 📑 List of Contents
 
-This project is a small **Obstacle Avoider Robot** controlled by Arduino and a Python-based computer vision system.
+- [Introduction](#-introduction)
+- [Background & Key Concepts](#-background--key-concepts)
+- [Design](#-design)
+- [Program](#-program)
+- [Results](#-results)
 
-A webcam captures the environment, while **YOLOv8** detects objects in real time. The detected object's position and estimated distance are then used to decide whether the robot should move forward, turn left, or turn right.
+---
 
-The system was tested with objects such as **bottles, cups, books, and hands**.
+## 📌 Introduction
 
-## 🧠 How It Works
+Obstacle avoidance is one of the fundamental problems in mobile robotics.
+A robot needs to be able to detect objects in its environment and determine
+an appropriate movement based on the detected obstacles.
 
-```text
-             Webcam
-                │
-                ▼
-        ┌───────────────┐
-        │    OpenCV     │
-        │   + YOLOv8    │
-        └───────┬───────┘
-                │
-         Object Detection
-                │
-                ▼
-       Position + Distance
-                │
-                ▼
-        Decision Making
-                │
-        ┌───────┼───────┐
-        ▼       ▼       ▼
-      Left   Forward   Right
-        │       │       │
-        └───────┼───────┘
-                ▼
-            Arduino
-                │
-                ▼
-          Motor Driver
-                │
-                ▼
-             Motors
-```
+In this project, a small mobile robot was developed using a **webcam,
+Python-based computer vision, YOLOv8, and Arduino**.
 
-## 🔧 Hardware
+The webcam captures the environment and the image is processed using
+OpenCV and YOLOv8 to detect objects. The detection results are then used
+to determine the robot's movement, while Arduino controls the motors.
 
-* Arduino Uno R3
-* L293D motor driver
-* Webcam
-* DC gear motors + wheels
-* Caster wheel
-* Breadboard
-* Jumper wires
-* 9V battery
-* Powerbank
+The main goal of this project is to build a simple robot that can detect
+objects in real time and respond by changing its movement.
 
-The Arduino is connected to the laptop through serial communication at **9600 baud**.
+---
 
-## 💻 Software
+## 🧠 Background & Key Concepts
 
-* Python
-* OpenCV
-* YOLOv8
-* PyTorch
-* CVZone
-* Arduino IDE
+### YOLOv8
 
-## 🚀 Features
+**YOLO (You Only Look Once)** is an object detection approach that can
+detect and locate multiple objects in an image in real time.
 
-* Real-time object detection
-* YOLOv8 object recognition
-* Webcam-based computer vision
-* Automatic obstacle avoidance
-* Arduino motor control
-* Serial communication
-* Hand tracking
-* Object position-based navigation
+In this project, **YOLOv8** is used to detect objects captured by the
+webcam.
 
-## 🎯 Detected Objects
+The detected objects are represented by bounding boxes and their
+corresponding class labels and confidence values.
 
-The current implementation focuses on:
+### Computer Vision
+
+Computer vision is used to process the webcam image before the detection
+result is sent to the robot control system.
+
+The project uses **OpenCV** for image acquisition and processing.
+
+### Obstacle Avoidance
+
+The detected object's position and estimated distance are used to determine
+the robot's movement.
+
+The general decision process is:
 
 ```text
-Bottle
-Cup
-Book
-Hand
-```
-
-The YOLO detection code filters the target classes using a confidence threshold of **0.5**.
-
-## 🧭 Navigation Logic
-
-The robot determines its movement based on the detected object's position and estimated distance.
-
-```text
-Object detected?
-       │
-   ┌───┴───┐
-   │       │
-  YES      NO
-   │       │
-   ▼       ▼
-Check     Move
-distance  forward
-   │
-   ▼
-Distance < 30 cm?
-   │
- ┌─┴─┐
-YES  NO
- │    │
- ▼    ▼
-Turn  Move
- │    forward
- └──────┘
-```
-
-When an object is detected as close, the robot chooses a turning direction based on the object's position relative to the center of the camera frame.
+       Object Detection
+              │
+              ▼
+       Check Position
+              │
+              ▼
+       Estimate Distance
+              │
+              ▼
+       Movement Decision
+        ┌─────┼─────┐
+        ▼     ▼     ▼
+      LEFT  FORWARD RIGHTthe center of the camera frame.
 
 ## 📦 Installation
 

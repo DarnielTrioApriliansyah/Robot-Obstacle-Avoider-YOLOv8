@@ -104,4 +104,26 @@ In this project, the L293D is connected to the Arduino Uno and DC motors. The Ar
 | 🖐️ **CVZone** | Computer vision utilities |
 | ⚡ **Arduino IDE** | Arduino programming and development |
 
+---
 
+## Programs
+
+The program is divided into two main parts: the **Python program** for
+computer vision, object detection, and movement decision-making, and the
+**Arduino program** for controlling the robot's motors.
+
+The Python program uses the webcam to capture the environment, processes
+the image using [OpenCV](https://opencv.org/) and
+[YOLOv8](https://github.com/ultralytics/ultralytics), and determines the
+appropriate movement of the robot. The movement command is then sent to
+the Arduino through serial communication.
+
+The Arduino program receives the command and controls the DC motors
+through the L293D motor driver.
+
+### YOLOv8 Model
+
+The project uses the **YOLOv8n** pretrained model.
+
+The model file can be obtained from
+[this repository](https://github.com/python-dontrepeatyourself/Real-Time-Object-Tracking-with-DeepSORT-and-YOLOv8/blob/657ab8eaebea118e5cee8c5b6ed9656e3aa03886/yolov8n.pt).
